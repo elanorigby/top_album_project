@@ -1,4 +1,3 @@
-
 import sys
 
 
@@ -64,7 +63,7 @@ def delete(alist, num):
     print("{} by {} has been removed.".format(removed[0], removed[1]))
 
 
-def make_it_so():
+if __name__ == __main__:
     album_list = []
     print("Heya, we're going to build a list of your top albums. How many would you like to list?")
     num_albums = get_num()
@@ -75,6 +74,3 @@ def make_it_so():
 
     while True:
         menu(album_list, num_albums)
-
-if __name__ == '__main__':
-    make_it_so()
